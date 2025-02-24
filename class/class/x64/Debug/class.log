@@ -1,0 +1,3 @@
+﻿  main.cpp
+D:\C++ Programming\C++ Practice Code\class\main.cpp(109,14): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  class.vcxproj -> D:\C++ Programming\C++ Practice Code\class\x64\Debug\class.exe

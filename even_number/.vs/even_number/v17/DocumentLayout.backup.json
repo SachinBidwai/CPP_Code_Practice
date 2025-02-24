@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\even_number\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B8ACCDAE-1EF9-4A86-8D19-8822AC90526A}|even_number.vcxproj|D:\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\even_number\\even.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B8ACCDAE-1EF9-4A86-8D19-8822AC90526A}|even_number.vcxproj|solutionrelative:even.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8ACCDAE-1EF9-4A86-8D19-8822AC90526A}|even_number.vcxproj|D:\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\even_number\\even.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B8ACCDAE-1EF9-4A86-8D19-8822AC90526A}|even_number.vcxproj|solutionrelative:even.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8ACCDAE-1EF9-4A86-8D19-8822AC90526A}|even_number.vcxproj|D:\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\even_number\\odd.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B8ACCDAE-1EF9-4A86-8D19-8822AC90526A}|even_number.vcxproj|solutionrelative:odd.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8ACCDAE-1EF9-4A86-8D19-8822AC90526A}|even_number.vcxproj|D:\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\even_number\\odd.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B8ACCDAE-1EF9-4A86-8D19-8822AC90526A}|even_number.vcxproj|solutionrelative:odd.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8ACCDAE-1EF9-4A86-8D19-8822AC90526A}|even_number.vcxproj|D:\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\even_number\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B8ACCDAE-1EF9-4A86-8D19-8822AC90526A}|even_number.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "odd.cpp",
+              "DocumentMoniker": "D:\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\even_number\\odd.cpp",
+              "RelativeDocumentMoniker": "odd.cpp",
+              "ToolTip": "D:\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\even_number\\odd.cpp",
+              "RelativeToolTip": "odd.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-15T02:25:43.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "odd.h",
+              "DocumentMoniker": "D:\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\even_number\\odd.h",
+              "RelativeDocumentMoniker": "odd.h",
+              "ToolTip": "D:\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\even_number\\odd.h",
+              "RelativeToolTip": "odd.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-15T02:25:15.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "even.h",
+              "DocumentMoniker": "D:\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\even_number\\even.h",
+              "RelativeDocumentMoniker": "even.h",
+              "ToolTip": "D:\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\even_number\\even.h",
+              "RelativeToolTip": "even.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-15T01:55:51.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "even.cpp",
+              "DocumentMoniker": "D:\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\even_number\\even.cpp",
+              "RelativeDocumentMoniker": "even.cpp",
+              "ToolTip": "D:\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\even_number\\even.cpp",
+              "RelativeToolTip": "even.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-15T01:55:34.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\even_number\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "D:\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\even_number\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-15T01:55:24.788Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

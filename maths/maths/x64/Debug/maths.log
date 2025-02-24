@@ -1,0 +1,5 @@
+﻿  main.cpp
+D:\C++ Programming\C++ Practice Code\maths\main.cpp(195,27): warning C4838: conversion from 'double' to 'int' requires a narrowing conversion
+D:\C++ Programming\C++ Practice Code\maths\main.cpp(195,27): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\C++ Programming\C++ Practice Code\maths\main.cpp(206,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  maths.vcxproj -> D:\C++ Programming\C++ Practice Code\maths\x64\Debug\maths.exe

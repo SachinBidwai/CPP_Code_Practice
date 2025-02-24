@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Sachin\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\function_code\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Sachin\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\function_code\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Sachin\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\function_code\\print_message_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:print_message_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Sachin\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\function_code\\print_message_1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:print_message_1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Sachin\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\function_code\\print_message.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:print_message.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Sachin\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\function_code\\print_message.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:print_message.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "print_message_1.cpp",
+              "DocumentMoniker": "D:\\Sachin\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\function_code\\print_message_1.cpp",
+              "RelativeDocumentMoniker": "print_message_1.cpp",
+              "ToolTip": "D:\\Sachin\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\function_code\\print_message_1.cpp",
+              "RelativeToolTip": "print_message_1.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-19T07:38:56.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "print_message_1.h",
+              "DocumentMoniker": "D:\\Sachin\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\function_code\\print_message_1.h",
+              "RelativeDocumentMoniker": "print_message_1.h",
+              "ToolTip": "D:\\Sachin\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\function_code\\print_message_1.h",
+              "RelativeToolTip": "print_message_1.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-19T07:38:00.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "print_message.cpp",
+              "DocumentMoniker": "D:\\Sachin\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\function_code\\print_message.cpp",
+              "RelativeDocumentMoniker": "print_message.cpp",
+              "ToolTip": "D:\\Sachin\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\function_code\\print_message.cpp",
+              "RelativeToolTip": "print_message.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-19T07:05:21.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "print_message.h",
+              "DocumentMoniker": "D:\\Sachin\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\function_code\\print_message.h",
+              "RelativeDocumentMoniker": "print_message.h",
+              "ToolTip": "D:\\Sachin\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\function_code\\print_message.h",
+              "RelativeToolTip": "print_message.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-19T07:04:55.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\Sachin\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\function_code\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "D:\\Sachin\\C\u002B\u002B Programming\\C\u002B\u002B Practice Code\\function_code\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAAAKMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-19T04:04:21.288Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+﻿  main.cpp
+D:\Sachin\C++ Programming\C++ Practice Code\Area_of_Rectangle\main.cpp(6,23): warning C4101: 'Area': unreferenced local variable
+  Area_of_Rectangle.vcxproj -> D:\Sachin\C++ Programming\C++ Practice Code\Area_of_Rectangle\x64\Debug\Area_of_Rectangle.exe

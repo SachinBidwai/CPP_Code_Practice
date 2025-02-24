@@ -1,0 +1,17 @@
+﻿  main.cpp
+D:\C++ Programming\C++ Practice Code\Demo\main.cpp(14,2): error C2365: 'LOW': redefinition; previous definition was 'enumerator'
+      D:\C++ Programming\C++ Practice Code\Demo\main.cpp(7,2):
+      see declaration of 'LOW'
+  
+D:\C++ Programming\C++ Practice Code\Demo\main.cpp(15,2): error C2365: 'MEDIUM': redefinition; previous definition was 'enumerator'
+      D:\C++ Programming\C++ Practice Code\Demo\main.cpp(8,2):
+      see declaration of 'MEDIUM'
+  
+D:\C++ Programming\C++ Practice Code\Demo\main.cpp(16,2): error C2365: 'HIGH': redefinition; previous definition was 'enumerator'
+      D:\C++ Programming\C++ Practice Code\Demo\main.cpp(9,2):
+      see declaration of 'HIGH'
+  
+D:\C++ Programming\C++ Practice Code\Demo\main.cpp(56,22): error C2440: 'initializing': cannot convert from 'Level' to 'main::level1'
+      D:\C++ Programming\C++ Practice Code\Demo\main.cpp(56,22):
+      Conversion to enumeration type requires an explicit cast (static_cast, C-style cast or parenthesized function-style cast)
+  
