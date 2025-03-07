@@ -57,9 +57,12 @@ int main()
 	cout << " }";
 	cout << "\n\n";
 
-	// cout << "List Size : " << endl;
+	cout << "List Size : ";
 
+	cout<< cars.size()<< endl;
 
+	cout << "Check if a List  Car is Empty : " << endl;
+	cout << cars.empty() << endl;
 
 	return 0;
 }
