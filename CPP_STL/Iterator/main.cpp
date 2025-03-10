@@ -32,9 +32,25 @@ int main()
     }
     cout << " }\n";
 
+
+    // Iterate in Reverse
+    // To iterate in reverse order, you can use rbegin() and rend() instead of begin() and end():
+    cout << "\nNames from Vector Cars Iterate in Reverse order : ";
+    cout << "{ ";
+    first = true;  // Reset before loop
+    // begin() returns an iterator that points to the first element of the data structure.
+    // end() returns an iterator that points to one position after the last element.
+    for (auto it = cars.rbegin(); it != cars.rend(); ++it)
+    {
+        if (!first) cout << ", ";
+        cout << *it;  // The dereference operator (*it) accesses the element the iterator points to.
+        first = false;
+    }
+    cout << " }\n";
+
    
     // Skip BMW car Name from vector Cars.
-    cout << "\nSkip BMW car Name from vector Cars:  ";
+    cout << "\nSkip \"BMW\" car Name from vector Cars:  ";
     cout << "{ ";
     first = true;  // Reset before loop
     for (auto it = cars.begin(); it != cars.end(); ) {
@@ -51,7 +67,7 @@ int main()
     }
     cout << " }" << endl;
 
-
+    
     // Display List Names:
     cout << "\nNames from List Names: ";
     cout << "{ ";
