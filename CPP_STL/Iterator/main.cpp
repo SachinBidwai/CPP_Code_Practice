@@ -22,13 +22,35 @@ int main()
     cout << "\nNames from Vector Cars: ";
     cout << "{ ";
     bool first = true;  // Reset before loop
+    // begin() returns an iterator that points to the first element of the data structure.
+    // end() returns an iterator that points to one position after the last element.
     for (auto it = cars.begin(); it != cars.end(); ++it)
     {
         if (!first) cout << ", ";
-        cout << *it;
+        cout << *it;  // The dereference operator (*it) accesses the element the iterator points to.
         first = false;
     }
     cout << " }\n";
+
+   
+    // Skip BMW car Name from vector Cars.
+    cout << "\nSkip BMW car Name from vector Cars:  ";
+    cout << "{ ";
+    first = true;  // Reset before loop
+    for (auto it = cars.begin(); it != cars.end(); ) {
+        if (*it == "BMW") {
+            it = cars.erase(it); // Remove an element if it matches "BMW"
+        }
+        else
+        {
+            if (!first) cout << ", ";
+            cout << *it;  // The dereference operator (*it) accesses the element the iterator points to.
+            first = false;
+            ++it;
+        }
+    }
+    cout << " }" << endl;
+
 
     // Display List Names:
     cout << "\nNames from List Names: ";
@@ -53,6 +75,10 @@ int main()
         first = false;
     }
     cout << " }\n";
+
+   
+    
+
 
     return 0;
 }
