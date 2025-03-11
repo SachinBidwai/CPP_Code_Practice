@@ -15,6 +15,7 @@ int main()
 {
     // Create Containers:
     vector<string> cars = { "Volvo", "BMW", "Ford", "Mazda" };
+    vector<int> height_in_cm = { 159, 150, 142, 170, 135, 149, 132,160 };
     list<string> names = { "Sachin", "Kaustubh", "Dipali", "Ruthvij" };
     list<int> numbers = { 28, 45, 23, 38, 87, 49, 56, 98 };
     deque<string> fruits = { "Mango", "Banana", "Apple", "Papaya" };
@@ -134,6 +135,41 @@ int main()
     }
     cout << " }\n\n";
 
+    // Algorithms:
+    cout << "Algorithms : " << "\n\n";
+
+    cout << "Sorting heights Algorithm in Ascending order:  ";
+
+    // Sort heights in Ascending order
+    sort(height_in_cm.begin(), height_in_cm.end());
+
+    cout << "{ ";
+    first = true; // Reset before loop
+
+    for (auto height : height_in_cm)
+    {
+        if (!first) cout << ", ";
+        cout << height;
+        first = false;
+    }
+    cout << " }\n\n";
+
+
+    cout << "Sorting heights Algorithm in Descending Order:  ";
+
+    // Sort heights in Descending Order
+    sort(height_in_cm.rbegin(), height_in_cm.rend());
+
+    cout << "{ ";
+    first = true; // Reset before loop
+
+    for (auto height : height_in_cm)
+    {
+        if (!first) cout << ", ";
+        cout << height;
+        first = false;
+    }
+    cout << " }\n\n";
 
     return 0;
 }
