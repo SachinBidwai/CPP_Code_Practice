@@ -19,6 +19,7 @@ int main()
     list<int> numbers = { 28, 45, 23, 38, 87, 49, 56, 98 };
     deque<string> fruits = { "Mango", "Banana", "Apple", "Papaya" };
     set<int> ages = { 13, 12, 14, 17, 18, 13, 14, 17, 18, 13, 11, 19 };
+    map<string, int> students = { {"sachin", 42},{"Dipali", 37}, {"Kaustubh", 13}, {"Ruthvij", 10} };
 
     // Display Vector Cars:
     cout << "\nNames from Vector Cars: ";
@@ -49,7 +50,7 @@ int main()
     }
     cout << " }\n";
 
-   
+
     // Skip BMW car Name from vector Cars.
     cout << "\nSkip \"BMW\" car Name from vector Cars:  ";
     cout << "{ ";
@@ -68,7 +69,7 @@ int main()
     }
     cout << " }" << endl;
 
-    
+
     // Display List Names:
     cout << "\nNames from List Names: ";
     cout << "{ ";
@@ -105,7 +106,7 @@ int main()
         first = false;
     }
     cout << " }\n";
-    
+
 
     // Display Set ages:
     cout << "\nAges from set ages : ";
@@ -120,9 +121,18 @@ int main()
     }
     cout << " }\n";
 
+    // Display Map students:
+    cout << "\nStudent name and age information through Map : ";
+    cout << "{ ";
+    first = true; // Reset before loop
 
-
-
+    for (auto it = students.begin(); it != students.end(); ++it)
+    {
+        if (!first) cout << ", ";
+        cout << "{ " << it->first << " , " << it->second << " }";
+        first = false;
+    }
+    cout << " }\n\n";
 
 
     return 0;
