@@ -15,7 +15,7 @@ bool less_than_80(int value)
 int main()
 {
 	vector<string> cars = { "Volvo", "BMW", "Ford", "Mazda" };
-	vector<int> numbers = { 24, 13, 14, 11, 19, 16, 23, 88, 9, 5, 49, 57, 33 };
+	vector<int> numbers = { 24, 13, 14, 11, 19, 16, 23, 88, 9, 5, 24, 49, 57, 33 };
 	vector<int> ages = { 34, 56, 29, 44, 56, 29, 56, 76, 12, 18, 39, 55, 72 };
 	vector<int> copy_ages(13);
 
@@ -173,5 +173,20 @@ int main()
 		cout << "Some ages are not less than 80.\n\n";
 	}
 
+
+	//An adjacent pair is a pair of elements that have the same value and are next to each other (adjacent) in the data range.
+	
+	auto it_5 = adjacent_find(numbers.begin(), numbers.end());
+
+	if (it_5 != numbers.end())
+	{
+		cout << *it_5 << "  number appears more than once.";
+	}
+	else
+	{
+		cout << "There are no adjuscent number.";
+	}	
+	
+	
 	return 0;
 }
