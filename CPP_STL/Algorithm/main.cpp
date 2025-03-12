@@ -10,6 +10,8 @@ int main()
 {
 	vector<string> cars = { "Volvo", "BMW", "Ford", "Mazda" };
 	vector<int> numbers = { 24, 13, 14, 11, 19, 16, 23, 88, 9, 5, 49, 57, 33 };
+	vector<int> ages = { 34, 56, 29, 44, 56, 29, 56, 76, 12, 18, 39, 55, 72 };
+	vector<int> copy_ages(13);
 
 	// Sort cars names in alphabetically Ascending order:
 	sort(cars.begin(), cars.end());
@@ -95,11 +97,11 @@ int main()
 	
 	if(it != numbers.end())
 	{
-		cout << "Number 19 Found in vector Numbers.\n";
+		cout << "Number 19 Found in vector Numbers.\n\n";
 	}
 	else
 	{
-		cout << "Number 19 was not found in vector Number. \n";
+		cout << "Number 19 was not found in vector Number. \n\n";
 	}
 
 	// Search for the number 
@@ -107,14 +109,39 @@ int main()
 
 	if (it_1 != numbers.end())
 	{
-		cout << "Number 38 found in vector Numbers.\n";
+		cout << "Number 38 found in vector Numbers.\n\n";
 	}
 	else
 	{
-		cout << "Number 38 was not found in vector Numbers. \n";
+		cout << "Number 38 was not found in vector Numbers. \n\n";
 	}
 
+	// Display ages :
+	cout << "Display ages :      { ";
+	first = true;
 
+	for (auto age : ages)
+	{
+		if (!first) cout << ", ";
+		cout << age;
+		first = false;
+	}
+	cout << " }\n\n";
+
+	copy(ages.begin(), ages.end(), copy_ages.begin());
+
+	// Display copy_ages :
+	cout << "Display copy_ages : { ";
+	first = true;
+
+	for (auto age : copy_ages)
+	{
+		if (!first) cout << ", ";
+		cout << age;
+		first = false;
+	}
+	cout << " }\n\n";
+	
 
 	return 0;
 }
