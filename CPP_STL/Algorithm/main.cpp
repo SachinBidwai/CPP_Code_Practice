@@ -9,7 +9,7 @@ using namespace std;
 int main()
 {
 	vector<string> cars = { "Volvo", "BMW", "Ford", "Mazda" };
-	vector<int> numbers = { 24, 13, 14, 11, 19, 16, 23, 9, 5, 33 };
+	vector<int> numbers = { 24, 13, 14, 11, 19, 16, 23, 88, 9, 5, 49, 57, 33 };
 
 	// Sort cars names in alphabetically Ascending order:
 	sort(cars.begin(), cars.end());
@@ -53,6 +53,27 @@ int main()
 	}
 	cout << " }\n\n";
 
+	// Sort numbers 
+	sort(numbers.begin(), numbers.end());
+
+	// Find the smallest number
+	auto it_3 = min_element(numbers.begin(), numbers.end());
+	cout << "The smallest number is : " << *it_3 << "\n\n";
+
+	// Find the largest number
+	
+	auto it_4 = max_element(numbers.begin(), numbers.end());
+	cout << "The Largest number is : " << *it_4 << "\n\n";
+
+	// Alternative method: 
+	// cout << "The Largest number is : " << *max_element(numbers.begin(), numbers.end()) << "\n\n";
+
+	// Find the first value greater than 24 in the sorted vector.
+	cout << "Find the first value greater than 24 in the sorted vector : ";
+	auto it_2 = upper_bound(numbers.begin(), numbers.end(), 24);
+	cout << *it_2 << "\n\n";
+
+	
 	// Sort numbers numerically, starting from the fourth element
 	sort(numbers.begin() + 3, numbers.end());
 
@@ -68,6 +89,32 @@ int main()
 		first = false;
 	}
 	cout << " }\n\n";
+
+	// Search for the number 19
+	auto it = find(numbers.begin(), numbers.end(), 19);
+	
+	if(it != numbers.end())
+	{
+		cout << "Number 19 Found in vector Numbers.\n";
+	}
+	else
+	{
+		cout << "Number 19 was not found in vector Number. \n";
+	}
+
+	// Search for the number 
+	auto it_1 = find(numbers.begin(), numbers.end(), 38);
+
+	if (it_1 != numbers.end())
+	{
+		cout << "Number 38 found in vector Numbers.\n";
+	}
+	else
+	{
+		cout << "Number 38 was not found in vector Numbers. \n";
+	}
+
+
 
 	return 0;
 }
