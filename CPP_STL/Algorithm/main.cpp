@@ -6,6 +6,12 @@
 #include<algorithm>
 using namespace std;
 
+bool less_than_80(int value)
+{
+	return value < 80;
+}
+
+
 int main()
 {
 	vector<string> cars = { "Volvo", "BMW", "Ford", "Mazda" };
@@ -156,6 +162,16 @@ int main()
 		first = false;
 	}
 	cout << " }\n\n";
+
+	// check wheather all ages are less 100 from vector.
+	if (all_of(ages.begin(), ages.end(), less_than_80))
+	{
+		cout << "All the ages are less than 80.\n\n";
+	}
+	else
+	{
+		cout << "Some ages are not less than 80.\n\n";
+	}
 
 	return 0;
 }
