@@ -142,6 +142,20 @@ int main()
 	}
 	cout << " }\n\n";
 	
+	// Fill all elements in the numbers vector with the value 35
+	fill(ages.begin(), ages.end(), 35);
+	
+	// Display ages :
+	cout << "Filling all ages to 35 in vector ages : { ";
+	first = true;
+
+	for (auto age : ages)
+	{
+		if (!first) cout << ", ";
+		cout << age;
+		first = false;
+	}
+	cout << " }\n\n";
 
 	return 0;
 }
