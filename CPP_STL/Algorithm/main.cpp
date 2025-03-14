@@ -207,14 +207,17 @@ int main()
 	cout << "Find out if a value exists in a sorted vector : " << endl;
 	if (binary_search(numbers.begin(), numbers.end(), 23))
 	{
-		cout << "The number 23 was found!";
+		cout << "The number 23 was found!"<< endl;
 	}
 	else 
 	{
-		cout << "The number 23 was not found.";
+		cout << "The number 23 was not found."<< endl;
 	}
 	
-	
+	// Count how many times the number 88 appears in a vector:
+	int amount = count(numbers.begin(), numbers.end(), 88);
+	cout << "Number 88 appears " << amount << " times." << endl;
+
 	
 	return 0;
 }
