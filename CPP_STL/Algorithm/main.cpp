@@ -223,5 +223,14 @@ int main()
 	int amount_1 = count_if(numbers.begin(), numbers.end(), greater_than_50);
 	cout << "There are " << amount_1 << " values greater than 50."<< endl;
 
+	//Fill a vector with a value:
+	cout << "Fill a vector with a value: { ";
+	fill(copy_ages.begin(), copy_ages.end(), 18);
+	for (int age_1 : copy_ages)
+	{
+		cout << age_1 << " ";
+	}
+	cout<<" }\n\n";
+
 	return 0;
 }
