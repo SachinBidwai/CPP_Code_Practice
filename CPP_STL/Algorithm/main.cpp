@@ -20,7 +20,7 @@ bool greater_than_50(int value)
 int main()
 {
 	vector<string> cars = { "Volvo", "BMW", "Ford", "Mazda" };
-	vector<int> numbers = { 24, 13, 14, 11, 19, 16, 23, 88, 9, 5, 24, 49, 57, 33 };
+	vector<int> numbers = { 24, 13, 14, 88, 11, 19, 16, 23, 88, 9, 5, 24, 49, 88, 57, 33 };
 	vector<int> ages = { 34, 56, 29, 44, 56, 29, 56, 76, 12, 18, 39, 55, 72 };
 	vector<int> copy_ages(13);
 
@@ -192,6 +192,8 @@ int main()
 		cout << "There are no adjuscent number."<< endl;
 	}	
 	
+	// Check that, if any number greater than 50 or not. 
+	cout << "Check that, if any number greater than 50 or not." << endl;
 	if (any_of(numbers.begin(), numbers.end(), greater_than_50))
 	{
 		cout << "Found a value greater than 50" << endl;
@@ -201,7 +203,18 @@ int main()
 		cout << "No values are greater than 50" << endl;
 	}
 
-
+	// Find out if a value exists in a sorted vector
+	cout << "Find out if a value exists in a sorted vector : " << endl;
+	if (binary_search(numbers.begin(), numbers.end(), 23))
+	{
+		cout << "The number 23 was found!";
+	}
+	else 
+	{
+		cout << "The number 23 was not found.";
+	}
+	
+	
 	
 	return 0;
 }
