@@ -12,6 +12,11 @@ bool less_than_80(int value)
 }
 
 
+bool greater_than_50(int value)
+{
+	return value > 50;
+}
+
 int main()
 {
 	vector<string> cars = { "Volvo", "BMW", "Ford", "Mazda" };
@@ -180,13 +185,23 @@ int main()
 
 	if (it_5 != numbers.end())
 	{
-		cout << *it_5 << "  number appears more than once.";
+		cout << *it_5 << "  number appears more than once."<< endl;
 	}
 	else
 	{
-		cout << "There are no adjuscent number.";
+		cout << "There are no adjuscent number."<< endl;
 	}	
 	
+	if (any_of(numbers.begin(), numbers.end(), greater_than_50))
+	{
+		cout << "Found a value greater than 50" << endl;
+	}
+	else
+	{
+		cout << "No values are greater than 50" << endl;
+	}
+
+
 	
 	return 0;
 }
