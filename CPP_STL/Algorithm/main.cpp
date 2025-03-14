@@ -218,6 +218,10 @@ int main()
 	int amount = count(numbers.begin(), numbers.end(), 88);
 	cout << "Number 88 appears " << amount << " times." << endl;
 
-	
+	// Count how many times a number greater than 50 appears in a vector:
+	cout << "Count how many times a number greater than 50 appears in a vector: " << endl;
+	int amount_1 = count_if(numbers.begin(), numbers.end(), greater_than_50);
+	cout << "There are " << amount_1 << " values greater than 50."<< endl;
+
 	return 0;
 }
