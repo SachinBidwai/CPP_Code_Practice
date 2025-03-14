@@ -232,5 +232,16 @@ int main()
 	}
 	cout<<" }\n\n";
 
+
+	// Find a value greater than 50 in a vector:
+	auto it_8 = find_if(numbers.begin(), numbers.end(), greater_than_50);
+	if (it_8 != numbers.end()) {
+		cout << "The number " << *it_8 << " is greater than 50.";
+	}
+	else 
+	{
+		cout << "No numbers greater than 50 were found.";
+	}
+
 	return 0;
 }
