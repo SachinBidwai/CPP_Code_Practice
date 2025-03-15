@@ -17,6 +17,11 @@ bool greater_than_50(int value)
 	return value > 50;
 }
 
+void add_one(int& value)
+{
+	value++;
+}
+
 int main()
 {
 	vector<string> cars = { "Volvo", "BMW", "Ford", "Mazda" };
@@ -24,6 +29,7 @@ int main()
 	vector<int> search = { 17,39,99, 57, 11, 12, 5 };
 	vector<int> ages = { 34, 56, 29, 44, 56, 29, 56, 76, 12, 18, 39, 55, 72 };
 	vector<int> copy_ages(13);
+	vector<int> even = {2,4,6,8,10};
 
 	// Sort cars names in alphabetically Ascending order:
 	sort(cars.begin(), cars.end());
@@ -256,8 +262,8 @@ int main()
 		cout << "None of the values were found."<< endl;
 	}
 	
-	// Find a value that is NOT greater than 5 in a vector:
-	cout << "Find a value that is NOT greater than 5 in a vector: " << endl;
+	// Find a value that is NOT greater than 50 in a vector:
+	cout << "Find a value that is NOT greater than 50 in a vector: " << endl;
 	auto it_10 = find_if_not(numbers.begin(), numbers.end(), greater_than_50);
 	if (it != numbers.end()) 
 	{
@@ -267,6 +273,23 @@ int main()
 	{
 		cout << "All numbers are greater than 50."<< endl;
 	}
+
+	// Increase every number in a vector by one:
+	for_each(even.begin(), even.end(), add_one);
+
+	// Output the modified numbers
+	cout << "Increase every number in a even number vector by one = { ";
+	first = true;
+	for (int e : even) 
+	{
+		if (!first)
+		{
+			cout << ", ";
+		}
+		cout << e;
+		first = false;
+	}
+	cout << " }"<< endl;
 
 	return 0;
 }
