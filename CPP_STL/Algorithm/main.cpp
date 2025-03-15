@@ -20,7 +20,7 @@ bool greater_than_50(int value)
 int main()
 {
 	vector<string> cars = { "Volvo", "BMW", "Ford", "Mazda" };
-	vector<int> numbers = { 24, 13, 14, 88, 11, 19, 16, 23, 88, 9, 5, 24, 49, 88, 57, 33 }; 
+	vector<int> numbers = { 24, 13, 14, 88, 11, 19, 16, 23, 88, 9, 5, 24, 49, 88, 57, 4, 33 }; 
 	vector<int> search = { 17,39,99, 57, 11, 12, 5 };
 	vector<int> ages = { 34, 56, 29, 44, 56, 29, 56, 76, 12, 18, 39, 55, 72 };
 	vector<int> copy_ages(13);
@@ -256,6 +256,17 @@ int main()
 		cout << "None of the values were found."<< endl;
 	}
 	
+	// Find a value that is NOT greater than 5 in a vector:
+	cout << "Find a value that is NOT greater than 5 in a vector: " << endl;
+	auto it_10 = find_if_not(numbers.begin(), numbers.end(), greater_than_50);
+	if (it != numbers.end()) 
+	{
+		cout << "The number " << *it_10 << " is not greater than 50."<< endl;
+	}
+	else 
+	{
+		cout << "All numbers are greater than 50."<< endl;
+	}
 
 	return 0;
 }
