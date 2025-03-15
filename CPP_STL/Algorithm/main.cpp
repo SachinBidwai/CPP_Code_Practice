@@ -27,6 +27,7 @@ int main()
 	vector<string> cars = { "Volvo", "BMW", "Ford", "Mazda" };
 	vector<int> numbers = { 24, 13, 14, 88, 11, 19, 16, 23, 88, 9, 5, 24, 49, 88, 57, 4, 33 }; 
 	vector<int> search = { 17,39,99, 57, 11, 12, 5 };
+	vector<int> search_1 = {11, 24, 57 };
 	vector<int> ages = { 34, 56, 29, 44, 56, 29, 56, 76, 12, 18, 39, 55, 72 };
 	vector<int> copy_ages(13);
 	vector<int> even = {2,4,6,8,10};
@@ -290,6 +291,21 @@ int main()
 		first = false;
 	}
 	cout << " }"<< endl;
+
+	//Find out if the values 11, 24 and 57 exist in a vector:
+
+	// Sort the numbers vector
+	sort(numbers.begin(), numbers.end());
+
+	// Check if search vector is included in numbers
+	if (includes(numbers.begin(), numbers.end(), search_1.begin(), search_1.end())) 
+	{
+		cout << "Found";
+	}
+	else 
+	{
+		cout << "Not found";
+	}
 
 	return 0;
 }
