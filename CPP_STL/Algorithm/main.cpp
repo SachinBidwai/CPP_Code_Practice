@@ -31,6 +31,9 @@ int main()
 	vector<int> ages = { 34, 56, 29, 44, 56, 29, 56, 76, 12, 18, 39, 55, 72 };
 	vector<int> copy_ages(13);
 	vector<int> even = {2,4,6,8,10};
+	vector<int> number_1 = { 1, 7, 3, 5, 9, 2 };
+	vector<int> other = { 9, 7, 5, 3, 2, 1 };
+
 
 	// Sort cars names in alphabetically Ascending order:
 	sort(cars.begin(), cars.end());
@@ -293,6 +296,7 @@ int main()
 	cout << " }"<< endl;
 
 	//Find out if the values 11, 24 and 57 exist in a vector:
+	cout << "Find out if the values 11, 24 and 57 exist in a vector:  ";
 
 	// Sort the numbers vector
 	sort(numbers.begin(), numbers.end());
@@ -305,6 +309,17 @@ int main()
 	else 
 	{
 		cout << "Not found";
+	}
+
+	// Find out if a vector is a permutation of another:
+	cout << "Find out if a vector is a permutation of another: ";
+	if (is_permutation(number_1.begin(), number_1.end(), other.begin())) 
+	{
+		cout << "Permutation found";
+	}
+	else 
+	{
+		cout << "No permutation found";
 	}
 
 	return 0;
