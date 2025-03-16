@@ -296,7 +296,7 @@ int main()
 	cout << " }"<< endl;
 
 	//Find out if the values 11, 24 and 57 exist in a vector:
-	cout << "Find out if the values 11, 24 and 57 exist in a vector:  ";
+	cout << "Find out if the values 11, 24 and 57 exist in a vector:  "<< endl;
 
 	// Sort the numbers vector
 	sort(numbers.begin(), numbers.end());
@@ -304,22 +304,33 @@ int main()
 	// Check if search vector is included in numbers
 	if (includes(numbers.begin(), numbers.end(), search_1.begin(), search_1.end())) 
 	{
-		cout << "Found";
+		cout << "Found"<< endl;
 	}
 	else 
 	{
-		cout << "Not found";
+		cout << "Not found"<< endl;
 	}
 
 	// Find out if a vector is a permutation of another:
-	cout << "Find out if a vector is a permutation of another: ";
+	cout << "Find out if a vector is a permutation of another: "<< endl;
 	if (is_permutation(number_1.begin(), number_1.end(), other.begin())) 
 	{
-		cout << "Permutation found";
+		cout << "Permutation found"<< endl;
 	}
 	else 
 	{
-		cout << "No permutation found";
+		cout << "No permutation found"<< endl;
+	}
+
+	// Find out if a vector is sorted:
+	cout << "Find out if a vector is sorted: "<< endl;
+	if (is_sorted(numbers.begin(), numbers.end()))
+	{
+		cout << "Numbers vector is Sorted"<< endl;
+	}
+	else 
+	{
+		cout << "Numbers vector is not sorted"<< endl;
 	}
 
 	return 0;
