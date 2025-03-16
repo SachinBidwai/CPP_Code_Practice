@@ -384,5 +384,18 @@ int main()
 	}
 	cout << " }" << endl;
 
+	// Find the lowest value in a vector:
+	cout << "Find the lowest value in a vector: " << endl;
+
+	auto it_14 = min_element(numbers.begin(), numbers.end());
+	if (it_14 != numbers.end()) 
+	{
+		cout << *it_14 << " is the lowest value frim vector Numbers"<< endl;
+	}
+	else 
+	{
+		cout << "The vector Numbers is empty"<< endl;
+	}
+
 	return 0;
 }
