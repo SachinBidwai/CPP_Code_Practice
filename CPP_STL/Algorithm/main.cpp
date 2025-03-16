@@ -352,5 +352,18 @@ int main()
 		cout << "No elements found at or above the lower bound"<< endl;
 	}
 
+	// Find the highest value in a vector: 
+	cout << "Find the highest value in a vector: "<< endl;
+
+	auto it_13 = max_element(numbers.begin(), numbers.end());
+	if (it_13 != numbers.end()) 
+	{
+		cout << *it_13 << " is the highest value"<< endl;
+	}
+	else 
+	{
+		cout << "The vector is empty"<< endl;
+	}
+
 	return 0;
 }
