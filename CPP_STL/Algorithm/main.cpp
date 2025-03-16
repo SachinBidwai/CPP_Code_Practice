@@ -339,5 +339,18 @@ int main()
 	int position = it_11 - numbers.begin();
 	cout << "The first " << position << " items are in ascending order.";
 
+	// Find the lowest value that is at or above "30" in a vector:
+	cout << "Find the lowest value that is at or above \"30\" in a vector: " << endl;
+	sort(numbers.begin(), numbers.end());
+	auto it_12 = lower_bound(numbers.begin(), numbers.end(), 30);
+	if (it_12 != numbers.end()) 
+	{
+		cout << *it_12 << " is the first value at or above 30"<< endl;
+	}
+	else 
+	{
+		cout << "No elements found at or above the lower bound"<< endl;
+	}
+
 	return 0;
 }
