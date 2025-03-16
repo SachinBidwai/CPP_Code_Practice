@@ -30,7 +30,10 @@ int main()
 	vector<int> search_1 = {11, 24, 57 };
 	vector<int> ages = { 34, 56, 29, 44, 56, 29, 56, 76, 12, 18, 39, 55, 72 };
 	vector<int> copy_ages(13);
-	vector<int> even = {2,4,6,8,10};
+	vector<int> even = {2, 4, 6, 8, 10};
+	vector<int> even_1 = { 2, 4, 6, 8, 10 };
+	vector<int> odd = { 1, 3, 5, 7, 9 };
+	vector<int> merged(10);
 	vector<int> number_1 = { 1, 7, 3, 5, 9, 2 };
 	vector<int> other = { 9, 7, 5, 3, 2, 1 };
 
@@ -364,6 +367,22 @@ int main()
 	{
 		cout << "The vector is empty"<< endl;
 	}
+
+	// Merge two vectors:
+
+	merge(even_1.begin(), even_1.end(), odd.begin(), odd.end(), merged.begin());
+	first = true;
+	cout << "{ ";
+	for (int item : merged)
+	{
+		if (!first)
+		{
+			cout << ", ";
+		}
+		cout << item << " ";
+		first = false;
+	}
+	cout << " }" << endl;
 
 	return 0;
 }
