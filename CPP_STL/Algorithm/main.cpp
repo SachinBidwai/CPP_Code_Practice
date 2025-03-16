@@ -333,5 +333,11 @@ int main()
 		cout << "Numbers vector is not sorted"<< endl;
 	}
 
+	// Count how many elements are in ascending order:
+	cout << "Count how many elements are in ascending order: " << endl;
+	auto it_11 = is_sorted_until(numbers.begin(), numbers.end());
+	int position = it_11 - numbers.begin();
+	cout << "The first " << position << " items are in ascending order.";
+
 	return 0;
 }
