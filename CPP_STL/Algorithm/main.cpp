@@ -423,6 +423,32 @@ int main()
 	}
 	cout << " }\n\n";
 
+	// Display Cars : 
+	cout << "Display Cars : { ";
+	first = true;
+	for (string car : cars)
+	{
+		if (!first) cout << ", ";
+		cout << car;
+		first = false;
+	}
+	cout << " }\n\n";
+
+	// Replace "Ford" with "Toyota" in a vector: 
+	cout << "Replace \"Ford\" with \"Toyota\" in a Cars vector:  { ";
+	replace(cars.begin(), cars.end(), (string)"Ford", (string)"Toyota");
+	first = true;
+	for (string car : cars) 
+	{
+		if (!first)
+		{
+			cout << ", ";
+		}
+		cout << car;
+		first = false;
+	}
+	cout << " }\n\n";
+
 
 	return 0;
 }
