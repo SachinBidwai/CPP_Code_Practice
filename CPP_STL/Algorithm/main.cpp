@@ -408,5 +408,21 @@ int main()
 		cout << "Some numbers are greater than 50"<< endl;
 	}
 
+	//Arrange the elements of a numbers vector randomly:
+	cout << "Arrange the elements of a numbers vector randomly: { ";
+	random_shuffle(numbers.begin(), numbers.end());
+	first = true;
+	for (int number : numbers) 
+	{
+		if (!first)
+		{
+			cout << ", ";
+		}
+		cout << number;
+		first = false;
+	}
+	cout << " }\n\n";
+
+
 	return 0;
 }
