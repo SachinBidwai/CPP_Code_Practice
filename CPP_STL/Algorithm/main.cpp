@@ -22,10 +22,16 @@ void add_one(int& value)
 	value++;
 }
 
+bool has_o(string item) 
+{
+	return item.find('o') != string::npos;
+}
+
 int main()
 {
 	vector<string> cars = { "Volvo", "BMW", "Ford", "Mazda" };
 	vector<string> newcars(4);
+	vector<string> newcars_1(4);
 	vector<int> numbers = { 24, 13, 14, 88, 11, 19, 16, 23, 88, 9, 5, 24, 49, 88, 57, 4, 33 }; 
 	vector<int> search = { 17,39,99, 57, 11, 12, 5 };
 	vector<int> search_1 = {11, 24, 57 };
@@ -465,6 +471,20 @@ int main()
 	}
 	cout << " }\n\n";
 
+	// Create a copy of a vector where values that have the letter "o" are replaced with "Toyota" :
+	cout << "Create a copy of a vector where values that have the letter \"o\" are replaced with \"Toyota\" : { ";
+	first = true;
+	replace_copy_if(cars.begin(), cars.end(), newcars_1.begin(), has_o, (string)"Toyota");
+	for (string car : newcars_1) 
+	{
+		if (!first)
+		{
+			cout << ", ";
+		}
+		cout << car;
+		first = false;
+	}
+	cout << " }\n\n";
 
 	return 0;
 }
