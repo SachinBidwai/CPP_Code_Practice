@@ -397,5 +397,16 @@ int main()
 		cout << "The vector Numbers is empty"<< endl;
 	}
 
+	// Find out if none of the numbers in a vector are greater than 50:
+	cout << "Find out if none of the numbers in a vector are greater than 50 : " << endl;
+	if (none_of(numbers.begin(), numbers.end(), greater_than_50)) 
+	{
+		cout << "None of the numbers are greater than 50"<< endl;
+	}
+	else 
+	{
+		cout << "Some numbers are greater than 50"<< endl;
+	}
+
 	return 0;
 }
