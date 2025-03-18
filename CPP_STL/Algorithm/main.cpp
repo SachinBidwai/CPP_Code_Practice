@@ -44,6 +44,7 @@ int main()
 	vector<int> merged(10);
 	vector<int> number_1 = { 1, 7, 3, 5, 9, 2 };
 	vector<int> other = { 9, 7, 5, 3, 2, 1 };
+	vector<int> prime_num = { 13, 7, 31, 5, 19, 29 };
 
 
 	// Sort cars names in alphabetically Ascending order:
@@ -515,6 +516,37 @@ int main()
 			cout << ", ";
 		}
 		cout << car1;
+		first = false;
+	}
+	cout << " }\n\n";
+
+	// Display Prime_num vector :
+	cout << "Display Prime_num vector: { ";
+	first = true;
+	for (int n : prime_num)
+	{
+		if (!first)
+		{
+			cout << ", ";
+		}
+		cout << n;
+		first = false;
+	}
+	cout << " }\n\n";
+
+
+	// Reverse the order of elements in a vector:
+	cout << "Reverse the order of elements in a vector: { ";
+	reverse(prime_num.begin(), prime_num.end());
+
+	first = true;
+	for (int n : prime_num)
+	{
+		if (!first)
+		{
+			cout << ", ";
+		}
+		cout << n;
 		first = false;
 	}
 	cout << " }\n\n";
