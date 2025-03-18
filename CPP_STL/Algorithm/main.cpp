@@ -45,6 +45,7 @@ int main()
 	vector<int> number_1 = { 1, 7, 3, 5, 9, 2 };
 	vector<int> other = { 9, 7, 5, 3, 2, 1 };
 	vector<int> prime_num = { 13, 7, 31, 5, 19, 29 };
+	vector<int> new_prime_num(6);
 
 
 	// Sort cars names in alphabetically Ascending order:
@@ -550,6 +551,37 @@ int main()
 		first = false;
 	}
 	cout << " }\n\n";
+
+	// Display prime_num vector :
+	cout << "Display prime_num vector : { ";
+	first = true;
+	for (int number : prime_num)
+	{
+		if (!first)
+		{
+			cout << ", ";
+		}
+		cout << number;
+		first = false;
+	}
+	cout << " }\n\n";
+
+
+	// Create a copy of a vector with the elements in reverse order:
+	cout << "Create a copy of a prime_num vector with the elements in reverse order: { ";
+	reverse_copy(prime_num.begin(), prime_num.end(), new_prime_num.begin());
+	first = true;
+	for (int number : new_prime_num) 
+	{
+		if (!first)
+		{
+			cout << ", ";
+		}
+		cout << number;
+		first = false;
+	}
+	cout << " }\n\n";
+
 
 	return 0;
 }
