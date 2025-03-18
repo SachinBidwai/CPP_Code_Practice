@@ -30,6 +30,7 @@ bool has_o(string item)
 int main()
 {
 	vector<string> cars = { "Volvo", "BMW", "Ford", "Mazda" };
+	vector<string> cars_1 = { "Volvo", "Honda", "Mazda", "Ford" , "i20"};
 	vector<string> newcars(4);
 	vector<string> newcars_1(4);
 	vector<int> numbers = { 24, 13, 14, 88, 11, 19, 16, 23, 88, 9, 5, 24, 49, 88, 57, 4, 33 }; 
@@ -482,6 +483,38 @@ int main()
 			cout << ", ";
 		}
 		cout << car;
+		first = false;
+	}
+	cout << " }\n\n";
+
+	// Display car1:
+	cout << "Display Car_1 vector : { ";
+	first = true;
+	for (string car1 : cars_1)
+	{
+		if (!first)
+		{
+			cout << ", ";
+		}
+		cout << car1;
+		first = false;
+	}
+	cout << " }\n\n";
+
+
+	// Replace cars_1 that have the letter "o" with "Toyota":
+
+	cout << "Replace cars_1 that have the letter \"o\" with \"Toyota\" : { ";
+
+	replace_if(cars_1.begin(), cars_1.end(), has_o, (string)"Toyota");
+	first = true;
+	for (string car1 : cars_1) 
+	{
+		if (!first)
+		{
+			cout << ", ";
+		}
+		cout << car1;
 		first = false;
 	}
 	cout << " }\n\n";
