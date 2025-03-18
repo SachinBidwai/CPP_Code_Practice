@@ -611,5 +611,20 @@ int main()
 		cout << "The target { 9, 5, 24, 49 } was not found\n\n";
 	}
 
+	// Sort Numbers Vector : 
+	cout << "Sort Numbers Vector : { ";
+	sort(numbers.begin(), numbers.end());
+	first = true;
+	for (int number : numbers) 
+	{
+		if (!first)
+		{
+			cout << ", ";
+		}
+		cout << number;
+		first = false;
+	}
+	cout << " }\n\n";
+
 	return 0;
 }
