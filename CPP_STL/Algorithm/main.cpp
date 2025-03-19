@@ -49,6 +49,7 @@ int main()
 	vector<int> other = { 9, 7, 5, 3, 2, 1 };
 	vector<int> prime_num = { 13, 7, 31, 5, 19, 29 };
 	vector<int> new_prime_num(6);
+	vector<char> values = { '1', '2', '3', '4', 'w', 'x', 'y', 'z' };
 
 
 	// Sort cars names in alphabetically Ascending order:
@@ -628,9 +629,39 @@ int main()
 	cout << " }\n\n";
 
 	// Swap the values of two variables:
-	cout << "Before: a = " << a << " | b = " << b << "\n";
+	cout << "Swap the values of two variables : "<< endl;
+	cout << "Before: a = " << a << " | b = " << b << "\n\n";
 	swap(a, b);
-	cout << "After:  a = " << a << " | b = " << b << "\n";
+	cout << "After:  a = " << a << " | b = " << b << "\n\n";
+
+	// Swap two ranges of a vector :
+	cout << "Display values Vector : { ";
+	first = true;
+	for (char val : values)
+	{
+		if (!first)
+		{
+			cout << ", ";
+		}
+		cout << val;
+		first = false;
+	}
+	cout << " }\n\n";
+
+	cout << "Swap two ranges of a vector : { ";
+	swap_ranges(values.begin() + 1, values.begin() + 3, values.begin() + 5);
+
+	first = true;
+	for (char val : values)
+	{
+		if (!first)
+		{
+			cout << ", ";
+		}
+		cout << val;
+		first = false;
+	}
+	cout << " }\n\n";
 
 	return 0;
 }
