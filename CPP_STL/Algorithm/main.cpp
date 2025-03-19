@@ -29,6 +29,7 @@ bool has_o(string item)
 
 int main()
 {
+	int a = 10, b = 25;
 	vector<string> cars = { "Volvo", "BMW", "Ford", "Mazda" };
 	vector<string> cars_1 = { "Volvo", "Honda", "Mazda", "Ford" , "i20"};
 	vector<string> newcars(4);
@@ -625,6 +626,11 @@ int main()
 		first = false;
 	}
 	cout << " }\n\n";
+
+	// Swap the values of two variables:
+	cout << "Before: a = " << a << " | b = " << b << "\n";
+	swap(a, b);
+	cout << "After:  a = " << a << " | b = " << b << "\n";
 
 	return 0;
 }
