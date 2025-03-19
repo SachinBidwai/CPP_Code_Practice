@@ -663,5 +663,18 @@ int main()
 	}
 	cout << " }\n\n";
 
+	// Find the first value greater than 45 in a sorted vector
+	cout << "Find the first value greater than 45 in a sorted vector : " << endl;
+	sort(numbers.begin(), numbers.end());
+	auto it_15 = upper_bound(numbers.begin(), numbers.end(), 45);
+	if (it_15 != numbers.end()) 
+	{
+		cout << *it_15 << " is the first value greater than 45.\n\n";
+	}
+	else 
+	{
+		cout << "No elements found above the upper bound.\n\n";
+	}
+
 	return 0;
 }
