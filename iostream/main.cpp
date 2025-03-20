@@ -6,6 +6,7 @@ int main()
 {
     int x = 5;
     int y = 0;
+    int myNum = 12;
 
     // Set "error.log" as the output file for the error messages
     ofstream log("error.log");
@@ -21,6 +22,9 @@ int main()
     {
         cout << (x / y);
     }
+
+    // Use the clog object to output log messages
+    clog << "The number " << myNum << " was given\n";
 
     // Close the file
     log.close();
