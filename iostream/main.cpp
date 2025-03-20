@@ -23,7 +23,11 @@ int main()
         cout << (x / y);
     }
 
-    // Use the clog object to output log messages
+    // Set "info.log" as the output file for the log messages
+    ofstream log_1("info.log");
+    clog.rdbuf(log_1.rdbuf());
+
+    // Write to the log file
     clog << "The number " << myNum << " was given\n";
 
     // Close the file
