@@ -30,6 +30,11 @@ int main()
     // Write to the log file
     clog << "The number " << myNum << " was given\n";
 
+    // Take user Input character
+    cout << "Take user Input character : ";
+    char c = cin.get();
+    cout <<"Input Character is : "<<  c;
+
     // Close the file
     log.close();
 
