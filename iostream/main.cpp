@@ -33,7 +33,12 @@ int main()
     // Take user Input character
     cout << "Take user Input character : ";
     char c = cin.get();
-    cout <<"Input Character is : "<<  c;
+    cout <<"Input Character is : " <<  c;
+
+    // Displays boolean values as "true" and "false" instead of "1" and "0".
+    cout << "\n\nDisplays boolean values as \"true\" and \"false\" instead of \"1\" and \"0\" : " << endl;
+    cout << "boolalpha :  ";
+    cout << boolalpha << false<< endl;
 
     // Close the file
     log.close();
