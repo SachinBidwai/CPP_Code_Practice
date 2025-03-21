@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <iomanip>
 using namespace std;
 
 int main() 
@@ -39,6 +40,38 @@ int main()
     cout << "\n\nDisplays boolean values as \"true\" and \"false\" instead of \"1\" and \"0\" : " << endl;
     cout << "boolalpha :  ";
     cout << boolalpha << false<< endl;
+
+    // Booleans
+    cout << "Booleans\n";
+    cout << false << "\n";
+    cout << boolalpha << false << "\n";
+
+    // Hexadecimal and octal numbers
+    cout << "\nHexadecimal and octal numbers\n";
+    int myInt = 14;
+    cout << dec << myInt << "\n";
+    cout << hex << myInt << "\n";
+    cout << oct << myInt << "\n";
+    cout << showbase << uppercase;
+    cout << hex << myInt << "\n";
+    cout << oct << myInt << "\n";
+    cout << dec;
+
+    // Floating point numbers
+    cout << "\nFloating point numbers\n";
+    float myFloat = 19.99;
+    cout << myFloat << "\n";
+    cout << showpos << showpoint << 12345.0 << "\n";
+    cout << noshowpos << noshowpoint;
+    cout << fixed << myFloat << "\n";
+    cout << scientific << myFloat << "\n";
+
+    // Alignment
+    cout << "\nAlignment\n";
+    cout << setw(10) << left << "Left" << "\n";
+    cout << setw(10) << right << "Right" << "\n";
+    cout << setw(10) << internal << -12345 << " (Internal)\n";
+
 
     // Close the file
     log.close();
