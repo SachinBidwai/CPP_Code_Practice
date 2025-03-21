@@ -81,6 +81,16 @@ int main()
     cout.width(10);
     cout << 125 << "\n";
 
+    // The cout.fill(c) method specifies which character will be used as padding.
+    cout << "The cout.fill(c) method specifies which character will be used as padding. : " << endl;
+    cout.fill('.');
+    cout.width(10);
+    cout << 5 << "\n";
+    cout.width(10);
+    cout << 25 << "\n";
+    cout.width(10);
+    cout << 125 << "\n";
+
     // Close the file
     log.close();
 
