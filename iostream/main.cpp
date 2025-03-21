@@ -72,6 +72,14 @@ int main()
     cout << setw(10) << right << "Right" << "\n";
     cout << setw(10) << internal << -12345 << " (Internal)\n";
 
+    // The minimum number of characters wide
+    cout << "The minimum number of characters wide : " << endl;
+    cout.width(10);
+    cout << 5 << "\n";
+    cout.width(10);
+    cout << 25 << "\n";
+    cout.width(10);
+    cout << 125 << "\n";
 
     // Close the file
     log.close();
