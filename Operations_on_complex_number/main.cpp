@@ -42,6 +42,15 @@ public:
 	{
 		return complex(real - other.real, imag - other.imag);
 	}
+
+	//multiply
+	complex multiply(complex other)
+	{
+		double r = real * other.real - imag * other.imag;
+		double i = real * other.imag + imag * other.real;
+		return complex(r, i);
+	}
+
 };
 
 int main()
@@ -58,11 +67,15 @@ int main()
 
 	complex sum = c1.add(c2);
 	complex sub = c1.subtract(c2);
+	complex multiply = c1.multiply(c2);
 
 	cout << "Sum : ";
 	sum.display();
 
 	cout << "Subtraction : ";
 	sub.display();
+
+	cout << "Multiply : ";
+	multiply.display();
 }
 
