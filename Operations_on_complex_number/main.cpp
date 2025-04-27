@@ -67,6 +67,20 @@ public:
 		result.imag = (imag * other.real - real * other.imag) / denominator;
 		return result;
 	}
+
+	// Modulus
+	double modulus()
+	{
+		return sqrt(real * real + imag * imag);
+	}
+
+	// Argument in radians
+	double argument()
+	{
+		return atan2(imag, real);
+	}
+
+
 };
 
 int main()
@@ -84,18 +98,25 @@ int main()
 	complex sum = c1.add(c2);
 	complex sub = c1.subtract(c2);
 	complex multiply = c1.multiply(c2);
-	complex divion = c1.divide(c2);
+	complex quotient = c1.divide(c2);
 
-	cout << "Sum : ";
+	cout << "Result of Addition : ";
 	sum.display();
 
-	cout << "Subtraction : ";
+	cout << "Result of Subtraction : ";
 	sub.display();
 
-	cout << "Multiply : ";
+	cout << "Result of Multiplication : ";
 	multiply.display();
 
-	cout << "Divide : ";
-	divion.display();
+	cout << "Result of division : ";
+	quotient.display();
+
+	cout << "Modulus of first complex Number is : " << c1.modulus()<< endl;
+	cout << "Modulus of Second complex Number is : " << c2.modulus()<< endl;
+
+	cout << "Argument of first complex Number is : " << c1.argument() << endl;
+	cout << "Argument of Second complex Number is : " << c2.argument() << endl;
+
 }
 
