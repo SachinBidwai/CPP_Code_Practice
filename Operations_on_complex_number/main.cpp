@@ -80,7 +80,29 @@ public:
 		return atan2(imag, real);
 	}
 
+	// Multiply by i
+	complex multiplyByI()
+	{
+		return complex(-imag, real);
+	}
+	
+	// Multiply by -i
+	complex multiplyByMinusI()
+	{
+		return complex(imag, -real);
+	}
 
+	// Multiply by 1
+	complex multiplyByOne()
+	{
+		return *this;
+	}
+
+	// Multiply by -1
+	complex multiplyByMinusOne()
+	{
+		return complex(-real, -imag);
+	}
 };
 
 int main()
@@ -118,5 +140,28 @@ int main()
 	cout << "Argument of first complex Number is : " << c1.argument() << endl;
 	cout << "Argument of Second complex Number is : " << c2.argument() << endl;
 
+	cout << "Multiplication by i to first complex number Result is : ";
+	c1.multiplyByI().display();
+	
+	cout << "Multiplication by i to Second complex number Result is : ";
+	c2.multiplyByI().display();
+
+	cout << "Multiplication by -i to First complex number Result is : ";
+	c1.multiplyByMinusI().display();
+
+	cout << "Multiplication by -i to Second complex number Result is : ";
+	c2.multiplyByMinusI().display();
+
+	cout << "Multiplication by 1 to First complex number Result is : ";
+	c1.multiplyByOne().display();
+
+	cout << "Multiplication by 1 to Second complex number Result is : ";
+	c2.multiplyByOne().display();
+
+	cout << "Multiplication by -1 to First complex number Result is : ";
+	c1.multiplyByMinusOne().display();
+
+	cout << "Multiplication by -1 to Second complex number Result is : ";
+	c2.multiplyByMinusOne().display();
 }
 
