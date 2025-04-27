@@ -51,6 +51,22 @@ public:
 		return complex(r, i);
 	}
 
+	// Division
+	complex divide(complex other)
+	{
+		complex result;
+		double denominator = other.real * other.real + other.imag * other.imag;
+
+		if (denominator == 0)
+		{
+			cout << "Error: Division by zero complex number!" << endl;
+			return result;
+		}
+
+		result.real = (real * other.real + imag * other.imag) / denominator;
+		result.imag = (imag * other.real - real * other.imag) / denominator;
+		return result;
+	}
 };
 
 int main()
@@ -68,6 +84,7 @@ int main()
 	complex sum = c1.add(c2);
 	complex sub = c1.subtract(c2);
 	complex multiply = c1.multiply(c2);
+	complex divion = c1.divide(c2);
 
 	cout << "Sum : ";
 	sum.display();
@@ -77,5 +94,8 @@ int main()
 
 	cout << "Multiply : ";
 	multiply.display();
+
+	cout << "Divide : ";
+	divion.display();
 }
 
